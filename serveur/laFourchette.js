@@ -2,79 +2,101 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var similarity = require('similarity');
+var fs = require('fs');
 
-function get_info(id,name) {
-    if(Number(id)){
-        const options = {
-                url: 'https://www.lafourchette.com/reservation/module/date-list/' + id,
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json',
-                    'Accept-Charset': 'utf-8',
-                    'User-Agent': 'client'
-                }
-            };
-        request(options, function (err, resp, body) {
-            if (!err) {
-                var json = JSON.parse(body);
-                var res = {"result" : []}
-                if (json.data.availabilityList != []) {
-                    for (var key in json.data.availabilityList) {
-                        if (json.data.availabilityList[key].bestSaleType != null) {
-                            res.result.push({
-                                "date": key,
-                                "offer": json.data.availabilityList[key].bestSaleType.title
-                            });
-                        }
-                    }
-                    if(res.result.length !=0)
-                    {
-                        console.log(name);
-                        console.log(res);
-                    }
-                    else
-                    {
-                        console.log("No Promotion for : "+name);
-                    }
-                }
-                else {
-                    console.log('No promotion for : '+name);
-                }
-            }
-        });
+function link_on_lafourchette(id, restaurant, nameOnLafourch) {
+    if (!fs.existsSync('./adressesLafourch.json')) {
+        var json = { "restaurants": [] };
+        fs.writeFile('./adressesLafourch.json', JSON.stringify(json), 'utf8');
     }
-    else{
-        console.log(name + " cannot be booked on LaFourchette")
-    }
+    var jsonfichier = JSON.parse(fs.readFileSync('./adressesLafourch.json'));
+    jsonfichier.restaurants.push({
+        "nameOnMichelin": restaurant.name,
+        "urlOnLafourch": 'https://www.lafourchette.com/restaurant/' + nameOnLafourch + '/' + id
+    });
+    fs.writeFile('./adressesLafourch.json', JSON.stringify(jsonfichier), 'utf8');
 }
-
-function get_id_by_name_addr(name, addr, callback) {
-    var url = 'https://www.lafourchette.com/search-refine/' + encodeURIComponent(name);
-    var bestMatchId;
-    var matchPerc = 0.1;
+/*
+function get_info(id, restaurant, nameOnLafourch) {
+    url = 'https://www.lafourchette.com/restaurant/' + nameOnLafourch + '/' + id;
     request(url, function (err, resp, html) {
         if (!err) {
             const $ = cheerio.load(html);
-            $('.resultContainer').children().children().each(function (i, elem) {
+            $('saleType saleType--specialOffer').children().each(function (i, elem) {
                 var resultAddr = $(elem).find('.resultItem-address').text().trim();
-                if (similarity(resultAddr, addr) > matchPerc) {
-                    matchPerc = similarity(resultAddr, addr);
+                if (similarity(resultAddr, restaurant.addr) > matchPerc) {
+                    matchPerc = similarity(resultAddr, restaurant.addr);
                     bestMatchId = $(elem).attr('data-restaurant-id');
                 }
             });
-            if (bestMatchId != undefined) {
-                callback(bestMatchId,name);
+
+            if (res.result.length != 0) {
+                console.log(restaurant.name);
+                console.log(res);
             }
             else {
-                console.log(name + ' is Not referenced on LaFourchette');
+                console.log("No Promotion for : " + restaurant.name);
+            }
+        }
+        else {
+            console.log('No promotion for : ' + restaurant.name);
+        }
+    }
+}
+*/
+
+function get_id_by_name_addr(restaurant, callback) {
+    var url2 = 'https://m.lafourchette.com/api/restaurant-prediction?name=' + encodeURIComponent(restaurant.name);
+    var bestMatchId;
+    var nameOnLafourch;
+    var matchPerc = 0.6;
+    request({ url: url2, json: true }, function (err, resp, body) {
+        if (!err) {
+            try {
+                if (body.length > 0) {
+                    body.forEach(function (element) {
+                        if (element.address.postal_code === restaurant.zipcode) {
+                            if (similarity(element.name, restaurant.name) > matchPerc) {
+                                matchPerc = similarity(element.name, restaurant.name);
+                                bestMatchId = element.id;
+                                nameOnLafourch = element.name;
+                                nameOnLafourch = nameOnLafourch.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+                                nameOnLafourch = nameOnLafourch.replace(/'/g, "-");
+                                nameOnLafourch = nameOnLafourch.replace(/ /g, "-");
+                                nameOnLafourch = nameOnLafourch.toLowerCase();
+                                if(bestMatchId!=undefined){
+                                callback(bestMatchId, restaurant, nameOnLafourch);}
+                                else {
+                                    console.log(restaurant.name + ' is Not referenced on LaFourchette');
+                                }
+                            }
+                        }
+                    });
+                }
+                /*if (bestMatchId != undefined) {
+                    console.log(bestMatchId);
+                    callback(bestMatchId, restaurant, nameOnLafourch);
+                    
+                }
+                else {
+                    console.log(restaurant.name + ' is Not referenced on LaFourchette');
+                }*/
+            }
+            catch (error) {
+                console.log(error);
             }
         }
     });
 }
 
 function get(restaurant) {
-    get_id_by_name_addr(restaurant.name,restaurant.address,get_info)
+    get_id_by_name_addr(restaurant, get_info)
 }
 
+function update(restaurant){
+    get_id_by_name_addr(restaurant, link_on_lafourchette)
 
+}
+
+exports.updateLafourch = update;
 exports.get = get;
