@@ -4,18 +4,7 @@ var cheerio = require('cheerio');
 var similarity = require('similarity');
 var fs = require('fs');
 
-function link_on_lafourchette(id, restaurant, nameOnLafourch) {
-    if (!fs.existsSync('./adressesLafourch.json')) {
-        var json = { "restaurants": [] };
-        fs.writeFile('./adressesLafourch.json', JSON.stringify(json), 'utf8');
-    }
-    var jsonfichier = JSON.parse(fs.readFileSync('./adressesLafourch.json'));
-    jsonfichier.restaurants.push({
-        "nameOnMichelin": restaurant.name,
-        "urlOnLafourch": 'https://www.lafourchette.com/restaurant/' + nameOnLafourch + '/' + id
-    });
-    fs.writeFile('./adressesLafourch.json', JSON.stringify(jsonfichier), 'utf8');
-}
+
 /*
 function get_info(id, restaurant, nameOnLafourch) {
     url = 'https://www.lafourchette.com/restaurant/' + nameOnLafourch + '/' + id;
@@ -23,9 +12,9 @@ function get_info(id, restaurant, nameOnLafourch) {
         if (!err) {
             const $ = cheerio.load(html);
             $('saleType saleType--specialOffer').children().each(function (i, elem) {
-                var resultAddr = $(elem).find('.resultItem-address').text().trim();
-                if (similarity(resultAddr, restaurant.addr) > matchPerc) {
-                    matchPerc = similarity(resultAddr, restaurant.addr);
+                var AddrOnLafourch = $(elem).find('.resultItem-address').text().trim();
+                if (similarity(AddrOnLafourch, restaurant.addr) > matchPerc) {
+                    matchPerc = similarity(AddrOnLafourch, restaurant.addr);
                     bestMatchId = $(elem).attr('data-restaurant-id');
                 }
             });
@@ -45,57 +34,84 @@ function get_info(id, restaurant, nameOnLafourch) {
 }
 */
 
-function get_id_by_name_addr(restaurant, callback) {
-    var url2 = 'https://m.lafourchette.com/api/restaurant-prediction?name=' + encodeURIComponent(restaurant.name);
-    var bestMatchId;
-    var nameOnLafourch;
-    var matchPerc = 0.6;
-    request({ url: url2, json: true }, function (err, resp, body) {
-        if (!err) {
-            try {
-                if (body.length > 0) {
-                    body.forEach(function (element) {
-                        if (element.address.postal_code === restaurant.zipcode) {
-                            if (similarity(element.name, restaurant.name) > matchPerc) {
-                                matchPerc = similarity(element.name, restaurant.name);
-                                bestMatchId = element.id;
-                                nameOnLafourch = element.name;
-                                nameOnLafourch = nameOnLafourch.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-                                nameOnLafourch = nameOnLafourch.replace(/'/g, "-");
-                                nameOnLafourch = nameOnLafourch.replace(/ /g, "-");
-                                nameOnLafourch = nameOnLafourch.toLowerCase();
-                                if(bestMatchId!=undefined){
-                                callback(bestMatchId, restaurant, nameOnLafourch);}
-                                else {
-                                    console.log(restaurant.name + ' is Not referenced on LaFourchette');
-                                }
-                            }
+
+
+function update_with_link(restaurant, callback) {
+    var matchPerc = 0.7;
+    var restaurantURL;
+    search_page_nbr(restaurant.name, function (pageNbr) {
+        for (var i = 1; i < pageNbr + 1; i++) {
+            var url = 'https://www.lafourchette.com/search-refine/' + encodeURIComponent(restaurant.name) + '?page=' + i;
+            request(url, function (err, resp, html) {
+                if (!err) {
+                    const $ = cheerio.load(html);
+                    $('.resultContainer').children().children().each(function (i, elem) {
+                        var AddrOnLafourch = $(elem).find('.resultItem-address').text().trim();
+                        if (similarity(AddrOnLafourch, restaurant.address) > matchPerc) {
+                            matchPerc = similarity(AddrOnLafourch, restaurant.address);
+                            restaurantURL = $(elem).find('.resultItem-name').children().attr('href');
                         }
                     });
+                    if (restaurantURL != undefined) {
+                        callback(restaurant, 'https://www.lafourchette.com' + restaurantURL);
+                        restaurantURL = undefined;
+                    }
                 }
-                /*if (bestMatchId != undefined) {
-                    console.log(bestMatchId);
-                    callback(bestMatchId, restaurant, nameOnLafourch);
-                    
-                }
-                else {
-                    console.log(restaurant.name + ' is Not referenced on LaFourchette');
-                }*/
-            }
-            catch (error) {
-                console.log(error);
-            }
+            });
         }
     });
 }
 
-function get(restaurant) {
-    get_id_by_name_addr(restaurant, get_info)
+function link_on_lafourchette(restaurant, url) {
+    var jsonfichier = JSON.parse(fs.readFileSync('./adressesLafourch.json', 'utf8'));
+    restaurant.AddrOnLafourch = url;
+    jsonfichier.restaurants.push(
+        restaurant);
+    console.log("Added " + restaurant.name + " on the list of referenced  restaurants : n° " + jsonfichier.restaurants.length);
+    fs.writeFileSync('./adressesLafourch.json', JSON.stringify(jsonfichier), 'utf8');
 }
 
-function update(restaurant){
-    get_id_by_name_addr(restaurant, link_on_lafourchette)
+function search_page_nbr(name, callback) {
+    var url = 'https://www.lafourchette.com/search-refine/' + encodeURIComponent(name);
+    request(url, function (err, resp, html) {
+        if (!err) {
+            const $ = cheerio.load(html);
+            var pageNbr = $('.pagination').children().children().last().prev().text().trim();
+            if (Number(pageNbr)) {
+                callback(pageNbr);
+            }
+            else {
+                callback(1);
+            }
+        }
+        else {
+            callback(1);
+        }
+    });
+}
 
+
+
+
+function get(json) {
+    if (!fs.existsSync('./adressesLafourch.json')) {
+        update(json,true);
+        return console.log('Scrapping in progress, please retry.');
+    }
+    var content = fs.readFileSync('./adressesLafourch.json', 'utf-8');
+    return JSON.parse(content);
+}
+
+function update(json,toBeUpdated) {
+    if (toBeUpdated === true) {
+        var jsonAdresses = { "restaurants": [] };
+        fs.writeFileSync('./adressesLafourch.json', JSON.stringify(jsonAdresses), 'utf8');
+        if (json != undefined) {
+            for (var i = 1; i < json.restaurants.length; i++) {
+                update_with_link(json.restaurants[i], link_on_lafourchette);
+            }
+        }
+    }
 }
 
 exports.updateLafourch = update;
