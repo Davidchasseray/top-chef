@@ -5,15 +5,7 @@ var toBeUpdated = true;
 var json = michelin.get();
 laFourchette.updateLafourch(json,toBeUpdated);
 var jsonLafourch = laFourchette.get(json);
+//laFourchette.getInfos(jsonLafourch.restaurants);
 
-/*
-if (json != undefined) {
-    console.log(json.restaurants.length);
-    for (var i = 1; i < json.restaurants.length; i++) {
-        
-        laFourchette.get(json.restaurants[i]);
-    }
-}
-*/
 
 
