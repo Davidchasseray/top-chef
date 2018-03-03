@@ -17,7 +17,7 @@ class Restaurants extends Component {
         var rows = [];
         this.state.restaurants.forEach((restaurant, index) => {
             rows.push(
-                <Restau id={index} name={restaurant.nameOnMichelin} />
+                <Restau id={index} name={restaurant.nameOnMichelin} url={restaurant.urlOnLaFourchette} stars={restaurant.stars}  />
             )
         });
         return (

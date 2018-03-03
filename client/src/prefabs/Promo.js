@@ -34,6 +34,10 @@ class Promo extends Component {
                 this.props.show();
             }
         }
+        if(rows.length<1)
+        {
+            return null;
+        }
         return rows;
     }
 }

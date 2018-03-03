@@ -22,6 +22,29 @@
   font-size: large;
 }
 
+.restauCard {
+  background-color:rgb(221, 162, 52);
+  border-radius: 20px;
+  color: black;
+}
+
+.titleCard{
+  background-color: white;
+  border-radius: 20px;
+  color:red;
+}
+
+.promoCard {
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+}
+
+.backG{
+  background-color: black;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

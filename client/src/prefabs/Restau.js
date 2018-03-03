@@ -27,23 +27,23 @@ class Restau extends Component {
   render() {
 
     if (this.state.showRestaurant===false) {
-    return (<div class="card-body">
+    return (
     <Promo id={this.props.id} show={this.show.bind(this)} />
-  </div>);
+  );
     }
 
     return (
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target={'#' + this.props.id} aria-expanded="true" aria-controls="collapseOne">
-              {this.props.name}
-            </button>
-          </h5>
+      <div class="card text-center">
+        <div class="card-header"  id="headingOne">
+          <h2 class="restauCard">
+            <a href={this.props.url}> {this.props.name}  </a> {'★'.repeat(+this.props.stars)}
+          </h2>
         </div>
-        <div id={this.props.id} class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
+        <div id={this.props.id} class="row" aria-labelledby="headingOne">
+          <div class="card-body ">
+          <h3 class="promoCard">
             <Promo name={this.props.name} id={this.props.id} show={this.doNothing.bind(this)} />
+          </h3>
           </div>
         </div>
       </div>
