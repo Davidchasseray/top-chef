@@ -90,14 +90,14 @@ function getDealsById(restaurant) {
     });
 }
 
-function get(restaurant) {
+function get(restaurant,transmit) {
     content = getCompleteRestaurantInfos();
     if (content) {
         var result = content.find((rest) => {
             return rest.nameOnMichelin == restaurant.nameOnMichelin;
         });
         getDealsById(result)
-            .then((res) => console.log(res.sales))
+            .then((res) => transmit.send(res))
             .catch((err) => console.log(err));
     }
 }

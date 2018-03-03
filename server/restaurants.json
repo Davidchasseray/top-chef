@@ -187,17 +187,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2fdwgd3/les-tablettes-de-jean-louis-nomicos-paris-16",
-        "address": {
-            "address_road": "16 Avenue Bugeaud",
-            "postal_code": "75016",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Les Tablettes de Jean-Louis Nomicos",
-        "chef": "Jean-Louis Nomicos",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2fa1zgi202/la-liegeoise-wimereux",
         "address": {
             "address_road": "digue de mer",
@@ -220,14 +209,14 @@
         "stars": 2
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/28vws7k/la-tour-des-vents-monbazillac",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2bj8gr9/le-saint-james-bouliac",
         "address": {
-            "address_road": "Le Moulin de Malfourat",
-            "postal_code": "24240",
-            "address_locality": "Monbazillac"
+            "address_road": "3 pl. Camille-Hostein",
+            "postal_code": "33270",
+            "address_locality": "BOULIAC"
         },
-        "nameOnMichelin": "La Tour des Vents",
-        "chef": "Damien Fagette",
+        "nameOnMichelin": "Le Saint-James",
+        "chef": "Nicolas Magie",
         "stars": 1
     },
     {
@@ -264,6 +253,28 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2fdwgd3/les-tablettes-de-jean-louis-nomicos-paris-16",
+        "address": {
+            "address_road": "16 Avenue Bugeaud",
+            "postal_code": "75016",
+            "address_locality": "Paris"
+        },
+        "nameOnMichelin": "Les Tablettes de Jean-Louis Nomicos",
+        "chef": "Jean-Louis Nomicos",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/28vws7k/la-tour-des-vents-monbazillac",
+        "address": {
+            "address_road": "Le Moulin de Malfourat",
+            "postal_code": "24240",
+            "address_locality": "Monbazillac"
+        },
+        "nameOnMichelin": "La Tour des Vents",
+        "chef": "Damien Fagette",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2bk7w2q/le-moulin-du-roc-champagnac-de-belair",
         "address": {
             "address_road": "Avenue Eugène Le Roy",
@@ -273,17 +284,6 @@
         "nameOnMichelin": "Le Moulin du Roc",
         "chef": "Alain Gardillou",
         "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/raf8m6mo/mathieu-pacaud-histoires-paris-16",
-        "address": {
-            "address_road": "85 Avenue Kléber",
-            "postal_code": "75016",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Mathieu Pacaud - Histoires",
-        "chef": "Mathieu Pacaud",
-        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/29tfnmd288/tetedoie-lyon-05",
@@ -506,17 +506,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2d440f7/mirazur-menton",
-        "address": {
-            "address_road": "30, Avenue Aristide Briand",
-            "postal_code": "06500",
-            "address_locality": "Menton"
-        },
-        "nameOnMichelin": "Mirazur",
-        "chef": "Mauro Colagreco",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/9rnckmj/ga-au-manoir-de-retival-caudebec-en-caux",
         "address": {
             "address_road": "2 rue St. Clair",
@@ -526,6 +515,17 @@
         "nameOnMichelin": "G.a. au Manoir de Rétival",
         "chef": "David Goerne",
         "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2d440f7/mirazur-menton",
+        "address": {
+            "address_road": "30, Avenue Aristide Briand",
+            "postal_code": "06500",
+            "address_locality": "Menton"
+        },
+        "nameOnMichelin": "Mirazur",
+        "chef": "Mauro Colagreco",
+        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2aqe7bm/gill-rouen",
@@ -554,7 +554,7 @@
         "address": {
             "address_road": "1593 av. de Lyon",
             "postal_code": "01960",
-            "address_locality": "Péronnas"
+            "address_locality": "PERONNAS"
         },
         "nameOnMichelin": "La Marelle",
         "chef": "Didier Goiffon",
@@ -580,6 +580,17 @@
         },
         "nameOnMichelin": "Le Pressoir",
         "chef": "Vincent David",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2bcbfo0/chateau-de-pray-amboise",
+        "address": {
+            "address_road": "Rue du Cèdre",
+            "postal_code": "37400",
+            "address_locality": "Amboise"
+        },
+        "nameOnMichelin": "Château de Pray",
+        "chef": "Arnaud Philippon",
         "stars": 1
     },
     {
@@ -693,17 +704,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2cnbixn/le-brittany-roscoff",
-        "address": {
-            "address_road": "bd Ste-Barbe",
-            "postal_code": "29681",
-            "address_locality": "Roscoff"
-        },
-        "nameOnMichelin": "Le Brittany",
-        "chef": "Loic Le Bail",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2csipcf/la-maison-de-bournissac-noves",
         "address": {
             "address_road": "montée d'Eyragues",
@@ -759,6 +759,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/3409276/1920-megeve",
+        "address": {
+            "address_road": "373 chemin des follières",
+            "postal_code": "74120",
+            "address_locality": "Megève"
+        },
+        "nameOnMichelin": "1920",
+        "chef": "Julien Gatillon",
+        "stars": 2
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/29jqk2d/les-bas-rupts-bas-rupts",
         "address": {
             "address_road": "181 rte de la Bresse",
@@ -781,17 +792,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2bicgcl/auberge-des-templiers-les-bezards",
-        "address": {
-            "address_road": "D2007",
-            "postal_code": "45290",
-            "address_locality": "Les Bézards"
-        },
-        "nameOnMichelin": "Auberge des Templiers",
-        "chef": "Yoshihiko MIURA",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2b1jv34/relais-de-la-poste-la-wantzenau",
         "address": {
             "address_road": "21 rue du Gén. -de-Gaulle",
@@ -803,17 +803,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/3w3putu/la-cooperative-belesta",
-        "address": {
-            "address_road": "2A Route de Caladroy",
-            "postal_code": "66720",
-            "address_locality": "Bélesta"
-        },
-        "nameOnMichelin": "La Coopérative",
-        "chef": "LEMAL Laurent",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2dr6qsw/o-flaveurs-douvaine",
         "address": {
             "address_road": "Château de Chilly",
@@ -822,6 +811,17 @@
         },
         "nameOnMichelin": "Ô Flaveurs",
         "chef": "Jérôme Mamet",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/3w3putu/la-cooperative-belesta",
+        "address": {
+            "address_road": "2A Route de Caladroy",
+            "postal_code": "66720",
+            "address_locality": "Bélesta"
+        },
+        "nameOnMichelin": "La Coopérative",
+        "chef": "LEMAL Laurent",
         "stars": 1
     },
     {
@@ -869,14 +869,14 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2fcm39b/yoann-conte-veyrier-du-lac",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2e1ykis/latelier-dedmond-val-disere",
         "address": {
-            "address_road": "13 Vieille-Route-des-Pensières",
-            "postal_code": "74290",
-            "address_locality": "Veyrier-du-Lac"
+            "address_road": "au Fornet",
+            "postal_code": "73150",
+            "address_locality": "Val-d'Isère"
         },
-        "nameOnMichelin": "Yoann Conte",
-        "chef": "Yoann CONTE",
+        "nameOnMichelin": "L'Atelier d'Edmond",
+        "chef": "Benoît Vidal",
         "stars": 2
     },
     {
@@ -891,14 +891,14 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2e1ykis/latelier-dedmond-val-disere",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2fcm39b/yoann-conte-veyrier-du-lac",
         "address": {
-            "address_road": "au Fornet",
-            "postal_code": "73150",
-            "address_locality": "Val-d'Isère"
+            "address_road": "13 Vieille-Route-des-Pensières",
+            "postal_code": "74290",
+            "address_locality": "Veyrier-du-Lac"
         },
-        "nameOnMichelin": "L'Atelier d'Edmond",
-        "chef": "Benoît Vidal",
+        "nameOnMichelin": "Yoann Conte",
+        "chef": "Yoann CONTE",
         "stars": 2
     },
     {
@@ -913,17 +913,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2eqhwui/maison-clovis-lyon-06",
-        "address": {
-            "address_road": "19 bd Brotteaux",
-            "postal_code": "69006",
-            "address_locality": "Lyon"
-        },
-        "nameOnMichelin": "Maison Clovis",
-        "chef": "Clovis Khoury",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/29uqy46/la-rotonde-la-tour-de-salvagny",
         "address": {
             "address_road": "200 avenue du Casino",
@@ -932,6 +921,17 @@
         },
         "nameOnMichelin": "La Rotonde",
         "chef": "Jean-François MALLE",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2eqhwui/maison-clovis-lyon-06",
+        "address": {
+            "address_road": "19 bd Brotteaux",
+            "postal_code": "69006",
+            "address_locality": "Lyon"
+        },
+        "nameOnMichelin": "Maison Clovis",
+        "chef": "Clovis Khoury",
         "stars": 1
     },
     {
@@ -944,6 +944,17 @@
         "nameOnMichelin": "Le Bénaton",
         "chef": "Keishi Sugimura",
         "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2fe7j1g/sylvestre-paris-07",
+        "address": {
+            "address_road": "79 rue St-Dominique",
+            "postal_code": "75007",
+            "address_locality": "Paris"
+        },
+        "nameOnMichelin": "Sylvestre",
+        "chef": "Sylvestre Wahid",
+        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2bbain5/ithurria-ainhoa",
@@ -1111,17 +1122,6 @@
         "stars": 3
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2buprmi/william-frachot-dijon",
-        "address": {
-            "address_road": "5 rue Michelet",
-            "postal_code": "21000",
-            "address_locality": "DIJON"
-        },
-        "nameOnMichelin": "William Frachot",
-        "chef": "William Frachot",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2e4vi29/alain-llorca-la-colle-sur-loup",
         "address": {
             "address_road": "350 Route de Saint-Paul",
@@ -1142,6 +1142,17 @@
         "nameOnMichelin": "Le Pergolèse",
         "chef": "Stéphane Gaborieau",
         "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2buprmi/william-frachot-dijon",
+        "address": {
+            "address_road": "5 rue Michelet",
+            "postal_code": "21000",
+            "address_locality": "DIJON"
+        },
+        "nameOnMichelin": "William Frachot",
+        "chef": "William Frachot",
+        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2aaahmg/loiseau-rive-gauche-paris-07",
@@ -1276,17 +1287,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/9isyik39/lekrin-laurent-azoulay-meribel-mottaret",
-        "address": {
-            "address_road": "Route de la Montée",
-            "postal_code": "73550",
-            "address_locality": "MERIBEL"
-        },
-        "nameOnMichelin": "L'Ekrin by Laurent Azoulay",
-        "chef": "Laurent AZOULAY",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2epv4gf/le-m-brest",
         "address": {
             "address_road": "22 r. du Cdt-Drogou",
@@ -1295,6 +1295,17 @@
         },
         "nameOnMichelin": "Le M",
         "chef": "Philippe Le Bigot",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/9isyik39/lekrin-laurent-azoulay-meribel-mottaret",
+        "address": {
+            "address_road": "Route de la Montée",
+            "postal_code": "73550",
+            "address_locality": "MERIBEL"
+        },
+        "nameOnMichelin": "L'Ekrin by Laurent Azoulay",
+        "chef": "Laurent AZOULAY",
         "stars": 1
     },
     {
@@ -1307,6 +1318,17 @@
         "nameOnMichelin": "Les Morainières",
         "chef": "Michaël Arnoult",
         "stars": 2
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2cnbixn/le-brittany-roscoff",
+        "address": {
+            "address_road": "bd Ste-Barbe",
+            "postal_code": "29681",
+            "address_locality": "Roscoff"
+        },
+        "nameOnMichelin": "Le Brittany",
+        "chef": "Loic Le Bail",
+        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2fdc0eg/le-baudelaire-paris-01",
@@ -1328,6 +1350,17 @@
         },
         "nameOnMichelin": "Le Moulin de la Gorce",
         "chef": "Pierre Bertranet",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/29gdnxp256n/les-fresques-evian-les-bains",
+        "address": {
+            "address_road": "13 Avenue des Mateirons",
+            "postal_code": "74500",
+            "address_locality": "Évian-les-Bains"
+        },
+        "nameOnMichelin": "Les Fresques",
+        "chef": "Patrice Vander",
         "stars": 1
     },
     {
@@ -1661,17 +1694,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2byuiv7/la-gouesniere-saint-meloir-des-ondes",
-        "address": {
-            "address_road": "1 Le Limonay",
-            "postal_code": "35350",
-            "address_locality": "Saint-Méloir-des-Ondes"
-        },
-        "nameOnMichelin": "La Gouesnière",
-        "chef": "Valade Olivier",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2ciults/anne-de-bretagne-la-plaine-sur-mer",
         "address": {
             "address_road": "163, Boulevard de la Tara",
@@ -1683,6 +1705,17 @@
         "stars": 2
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2byuiv7/la-gouesniere-saint-meloir-des-ondes",
+        "address": {
+            "address_road": "1 Le Limonay",
+            "postal_code": "35350",
+            "address_locality": "Saint-Méloir-des-Ondes"
+        },
+        "nameOnMichelin": "La Gouesnière",
+        "chef": "Valade Olivier",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2a6bp6b/le-pre-du-moulin-serignan-du-comtat",
         "address": {
             "address_road": "rte de Ste-Cécile-les-Vignes",
@@ -1691,17 +1724,6 @@
         },
         "nameOnMichelin": "Le Pré du Moulin",
         "chef": "Caroline et Pascal Alonso",
-        "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/1ore4aj2/la-scene-paris-08",
-        "address": {
-            "address_road": "33 Avenue George V",
-            "postal_code": "75008",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "La Scène",
-        "chef": "Stéphanie Le Quellec",
         "stars": 1
     },
     {
@@ -1936,17 +1958,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2av98t5/le-st-placide-saint-malo",
-        "address": {
-            "address_road": "6 place du poncel",
-            "postal_code": "35400",
-            "address_locality": "Saint-Malo"
-        },
-        "nameOnMichelin": "Le St-Placide",
-        "chef": "Luc Mobihan",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/9sqrw32m/le-gabriel-paris-08",
         "address": {
             "address_road": "42 Avenue Gabriel",
@@ -1956,6 +1967,17 @@
         "nameOnMichelin": "Le Gabriel",
         "chef": "Jérôme Banctel",
         "stars": 2
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2av98t5/le-st-placide-saint-malo",
+        "address": {
+            "address_road": "6 place du poncel",
+            "postal_code": "35400",
+            "address_locality": "Saint-Malo"
+        },
+        "nameOnMichelin": "Le St-Placide",
+        "chef": "Luc Mobihan",
+        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2clh5yg/le-parc-les-crayeres-reims",
@@ -2035,6 +2057,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/1ore4aj2/la-scene-paris-08",
+        "address": {
+            "address_road": "33 Avenue George V",
+            "postal_code": "75008",
+            "address_locality": "Paris"
+        },
+        "nameOnMichelin": "La Scène",
+        "chef": "Stéphanie Le Quellec",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/29h5xkp/le-castellaras-fayence",
         "address": {
             "address_road": "461 chemin Peymeyan",
@@ -2057,17 +2090,6 @@
         "stars": 3
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2abav0l/lucas-carton-paris-08",
-        "address": {
-            "address_road": "9 pl. de la Madeleine",
-            "postal_code": "75008",
-            "address_locality": "Paris 08"
-        },
-        "nameOnMichelin": "Lucas Carton",
-        "chef": "Julien Dumas",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/vx40rloc/larcane-paris-18",
         "address": {
             "address_road": "39 Rue Lamarck",
@@ -2076,6 +2098,17 @@
         },
         "nameOnMichelin": "L'Arcane",
         "chef": "Laurent Magnin",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2abav0l/lucas-carton-paris-08",
+        "address": {
+            "address_road": "9 pl. de la Madeleine",
+            "postal_code": "75008",
+            "address_locality": "Paris 08"
+        },
+        "nameOnMichelin": "Lucas Carton",
+        "chef": "Julien Dumas",
         "stars": 1
     },
     {
@@ -2244,17 +2277,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2afdah0/maison-rostang-paris-17",
-        "address": {
-            "address_road": "20 rue Rennequin",
-            "postal_code": "75017",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Maison Rostang",
-        "chef": "Nicolas Beaumann",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2exgwy4/flaveur-nice",
         "address": {
             "address_road": "25 Rue Gubernatis",
@@ -2365,6 +2387,17 @@
         "stars": 2
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/ygx47dyb/la-scene-theleme-paris-17",
+        "address": {
+            "address_road": "18 Rue Troyon",
+            "postal_code": "75017",
+            "address_locality": "PARIS"
+        },
+        "nameOnMichelin": "La Scène Thélème",
+        "chef": "Julien Roucheteau",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2c4rgah/chapelle-saint-martin-nieul",
         "address": {
             "address_road": "33, Saint Martin du Fault",
@@ -2384,17 +2417,6 @@
         },
         "nameOnMichelin": "Origine",
         "chef": "Benjamin Lechevallier",
-        "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/ygx47dyb/la-scene-theleme-paris-17",
-        "address": {
-            "address_road": "18 Rue Troyon",
-            "postal_code": "75017",
-            "address_locality": "PARIS"
-        },
-        "nameOnMichelin": "La Scène Thélème",
-        "chef": "Julien Roucheteau",
         "stars": 1
     },
     {
@@ -2596,6 +2618,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/28qr6q2/la-chassagnette-arles",
+        "address": {
+            "address_road": "route du Sambuc",
+            "postal_code": "13200",
+            "address_locality": "ARLES"
+        },
+        "nameOnMichelin": "La Chassagnette",
+        "chef": "Armand Arnal",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2euo0rk/antoine-paris-16",
         "address": {
             "address_road": "10 av. de New-York",
@@ -2640,6 +2673,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2adr3mu/cobea-paris-14",
+        "address": {
+            "address_road": "11 r. Raymond Losserand",
+            "postal_code": "75014",
+            "address_locality": "Paris 14"
+        },
+        "nameOnMichelin": "Cobéa",
+        "chef": "Philippe Bélissent",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2fa4jx5/le-carre-dalethius-charmes-sur-rhone",
         "address": {
             "address_road": "4 r. Paul-Bertois",
@@ -2651,15 +2695,15 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2adr3mu/cobea-paris-14",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2afdah0/maison-rostang-paris-17",
         "address": {
-            "address_road": "11 r. Raymond Losserand",
-            "postal_code": "75014",
-            "address_locality": "Paris 14"
+            "address_road": "20 rue Rennequin",
+            "postal_code": "75017",
+            "address_locality": "Paris"
         },
-        "nameOnMichelin": "Cobéa",
-        "chef": "Philippe Bélissent",
-        "stars": 1
+        "nameOnMichelin": "Maison Rostang",
+        "chef": "Nicolas Beaumann",
+        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/29qv5p8/auberge-frankenbourg-la-vancelle",
@@ -2761,17 +2805,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2fe7j1g/sylvestre-paris-07",
-        "address": {
-            "address_road": "79 rue St-Dominique",
-            "postal_code": "75007",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Sylvestre",
-        "chef": "Sylvestre Wahid",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2brjniu/herve-busset-conques-en-rouergue",
         "address": {
             "address_road": "D901",
@@ -2836,17 +2869,6 @@
         "nameOnMichelin": "Maison Lameloise",
         "chef": "Eric Pras",
         "stars": 3
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/9oo4cel/penati-al-baretto-paris-08",
-        "address": {
-            "address_road": "9 rue Balzac",
-            "postal_code": "75008",
-            "address_locality": "Paris 08"
-        },
-        "nameOnMichelin": "Penati al Baretto",
-        "chef": "Alberico Penati",
-        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/29nxch5/la-bergerie-sarpoil",
@@ -2915,17 +2937,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2a7edmf/le-grand-vefour-paris-01",
-        "address": {
-            "address_road": "17 rue de Beaujolais",
-            "postal_code": "75001",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Le Grand Véfour",
-        "chef": "Guy Martin",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2ajskia/la-galinette-perpignan",
         "address": {
             "address_road": "23 r. Jean Payra",
@@ -2946,17 +2957,6 @@
         "nameOnMichelin": "Thierry Drapeau",
         "chef": "THIERRY DRAPEAU",
         "stars": 2
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/9yw7wqd3/hexagone-paris-16",
-        "address": {
-            "address_road": "85 Avenue Kléber",
-            "postal_code": "75016",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Hexagone",
-        "chef": "Mathieu Pacaud",
-        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2dckc0s/auberge-de-clochemerle-vaux-en-beaujolais",
@@ -3388,17 +3388,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/29gdnxp256n/les-fresques-evian-les-bains",
-        "address": {
-            "address_road": "13 Avenue des Mateirons",
-            "postal_code": "74500",
-            "address_locality": "Évian-les-Bains"
-        },
-        "nameOnMichelin": "Les Fresques",
-        "chef": "Patrice Vander",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/3fa7ojh3/lo-des-vignes-fuisse",
         "address": {
             "address_road": "r. du Bourg",
@@ -3408,17 +3397,6 @@
         "nameOnMichelin": "L'O des Vignes",
         "chef": "Sébastien Chambru",
         "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/3409276/1920-megeve",
-        "address": {
-            "address_road": "373 chemin des follières",
-            "postal_code": "74120",
-            "address_locality": "Megève"
-        },
-        "nameOnMichelin": "1920",
-        "chef": "Julien Gatillon",
-        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/3n5gkk2/la-gourmandiere-la-table-dolivier-vannes",
@@ -3553,17 +3531,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2faahd5/le-clair-de-la-plume-grignan",
-        "address": {
-            "address_road": "2 Place du Mail",
-            "postal_code": "26230",
-            "address_locality": "Grignan"
-        },
-        "nameOnMichelin": "Le Clair de la Plume",
-        "chef": "Julien ALLANO, Chef de Cuisine",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/29fhuzu/les-berceaux-epernay",
         "address": {
             "address_road": "13 rue des Berceaux",
@@ -3572,17 +3539,6 @@
         },
         "nameOnMichelin": "Les Berceaux",
         "chef": "Patrick Michelon",
-        "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/3503291/lecrin-paris-08",
-        "address": {
-            "address_road": "10 place de la Concorde",
-            "postal_code": "75008",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "L'Écrin",
-        "chef": "Christopher Hache",
         "stars": 1
     },
     {
@@ -3608,6 +3564,28 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2chq5p0/chateau-cordeillan-bages-pauillac",
+        "address": {
+            "address_road": "Route des châteaux",
+            "postal_code": "33250",
+            "address_locality": "Pauillac"
+        },
+        "nameOnMichelin": "Château Cordeillan-Bages",
+        "chef": "Julien Lefebvre",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/3503291/lecrin-paris-08",
+        "address": {
+            "address_road": "10 place de la Concorde",
+            "postal_code": "75008",
+            "address_locality": "Paris"
+        },
+        "nameOnMichelin": "L'Écrin",
+        "chef": "Christopher Hache",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2dtoif7/les-voiles-dor-dieppe",
         "address": {
             "address_road": "2 chemin de la Falaise",
@@ -3619,17 +3597,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/297ge86/jean-claude-leclerc-clermont-ferrand",
-        "address": {
-            "address_road": "12 rue St-Adjutor",
-            "postal_code": "63000",
-            "address_locality": "Clermont-Ferrand"
-        },
-        "nameOnMichelin": "Jean-Claude Leclerc",
-        "chef": "Jean-Claude Leclerc",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2aiqpqd/gordon-ramsay-au-trianon-versailles",
         "address": {
             "address_road": "1 bd de la Reine",
@@ -3638,6 +3605,17 @@
         },
         "nameOnMichelin": "Gordon Ramsay au Trianon",
         "chef": "",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/297ge86/jean-claude-leclerc-clermont-ferrand",
+        "address": {
+            "address_road": "12 rue St-Adjutor",
+            "postal_code": "63000",
+            "address_locality": "Clermont-Ferrand"
+        },
+        "nameOnMichelin": "Jean-Claude Leclerc",
+        "chef": "Jean-Claude Leclerc",
         "stars": 1
     },
     {
@@ -3661,17 +3639,6 @@
         "nameOnMichelin": "La Pyramide-Patrick Henriroux",
         "chef": "Patrick Henriroux",
         "stars": 2
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2bh3p7k/restaurant-des-rois-beaulieu-sur-mer",
-        "address": {
-            "address_road": "5 Boulevard du Maréchal Leclerc",
-            "postal_code": "06310",
-            "address_locality": "Beaulieu-sur-Mer"
-        },
-        "nameOnMichelin": "Restaurant des Rois",
-        "chef": "Yannick Franques",
-        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2852206/larcheste-paris-16",
@@ -3704,17 +3671,6 @@
         },
         "nameOnMichelin": "1741",
         "chef": "Fabien Raux",
-        "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2bj8gr9/le-saint-james-bouliac",
-        "address": {
-            "address_road": "3 pl. Camille-Hostein",
-            "postal_code": "33270",
-            "address_locality": "BOULIAC"
-        },
-        "nameOnMichelin": "Le Saint-James",
-        "chef": "Nicolas Magie",
         "stars": 1
     },
     {
@@ -3806,6 +3762,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/9oo4cel/penati-al-baretto-paris-08",
+        "address": {
+            "address_road": "9 rue Balzac",
+            "postal_code": "75008",
+            "address_locality": "Paris 08"
+        },
+        "nameOnMichelin": "Penati al Baretto",
+        "chef": "Alberico Penati",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2cndbvx/rackham-roscoff",
         "address": {
             "address_road": "27 pl. Lacaze Duthiers rčs de l'église",
@@ -3850,6 +3817,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2a7edmf/le-grand-vefour-paris-01",
+        "address": {
+            "address_road": "17 rue de Beaujolais",
+            "postal_code": "75001",
+            "address_locality": "Paris"
+        },
+        "nameOnMichelin": "Le Grand Véfour",
+        "chef": "Guy Martin",
+        "stars": 2
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2e8vcj7/larome-paris-08",
         "address": {
             "address_road": "3 rue St-Philippe-du-Roule",
@@ -3872,6 +3850,17 @@
         "stars": 1
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2b6gbtl/le-bec-au-cauchois-valmont",
+        "address": {
+            "address_road": "22 Rue André Fiquet",
+            "postal_code": "76540",
+            "address_locality": "Valmont"
+        },
+        "nameOnMichelin": "Le Bec au Cauchois",
+        "chef": "Pierre Caillet",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2csqkr7/la-vague-dor-saint-tropez",
         "address": {
             "address_road": "Plage de Bouillabaisse",
@@ -3883,14 +3872,14 @@
         "stars": 3
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2b6gbtl/le-bec-au-cauchois-valmont",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2faahd5/le-clair-de-la-plume-grignan",
         "address": {
-            "address_road": "22 Rue André Fiquet",
-            "postal_code": "76540",
-            "address_locality": "Valmont"
+            "address_road": "2 Place du Mail",
+            "postal_code": "26230",
+            "address_locality": "Grignan"
         },
-        "nameOnMichelin": "Le Bec au Cauchois",
-        "chef": "Pierre Caillet",
+        "nameOnMichelin": "Le Clair de la Plume",
+        "chef": "Julien ALLANO, Chef de Cuisine",
         "stars": 1
     },
     {
@@ -3916,14 +3905,14 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2chq5p0/chateau-cordeillan-bages-pauillac",
+        "urlOnMichelin": "https://restaurant.michelin.fr/2d2wqpd/le-prieure-villeneuve-les-avignon",
         "address": {
-            "address_road": "Route des châteaux",
-            "postal_code": "33250",
-            "address_locality": "Pauillac"
+            "address_road": "7, place du Chapitre",
+            "postal_code": "30400",
+            "address_locality": "Villeneuve-lès-Avignon"
         },
-        "nameOnMichelin": "Château Cordeillan-Bages",
-        "chef": "Julien Lefebvre",
+        "nameOnMichelin": "Le Prieuré",
+        "chef": "Marc Fontanne ",
         "stars": 1
     },
     {
@@ -4389,6 +4378,17 @@
         "stars": 2
     },
     {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2affgmi/apicius-paris-08",
+        "address": {
+            "address_road": "20 r. d'Artois",
+            "postal_code": "75008",
+            "address_locality": "PARIS"
+        },
+        "nameOnMichelin": "Apicius",
+        "chef": "",
+        "stars": 1
+    },
+    {
         "urlOnMichelin": "https://restaurant.michelin.fr/3ffu4gq2/i-salti-belgodere",
         "address": {
             "address_road": "route du Reginu",
@@ -4565,17 +4565,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/28qr6q2/la-chassagnette-arles",
-        "address": {
-            "address_road": "route du Sambuc",
-            "postal_code": "13200",
-            "address_locality": "Arles"
-        },
-        "nameOnMichelin": "La Chassagnette",
-        "chef": "",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/jh83esx/qui-plume-la-lune-paris-11",
         "address": {
             "address_road": "50 r. Amelot",
@@ -4584,6 +4573,17 @@
         },
         "nameOnMichelin": "Qui plume la Lune",
         "chef": "Jacky Ribault",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2bh3p7k/restaurant-des-rois-beaulieu-sur-mer",
+        "address": {
+            "address_road": "5 Boulevard du Maréchal Leclerc",
+            "postal_code": "06310",
+            "address_locality": "Beaulieu-sur-Mer"
+        },
+        "nameOnMichelin": "Restaurant des Rois",
+        "chef": "Yannick Franques",
         "stars": 1
     },
     {
@@ -5027,17 +5027,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2agz71j/la-table-des-blot-auberge-du-chateau-dampierre-en-yvelines",
-        "address": {
-            "address_road": "1 Grande-Rue",
-            "postal_code": "78720",
-            "address_locality": "Dampierre-en-Yvelines"
-        },
-        "nameOnMichelin": "La Table des Blot - Auberge du Château",
-        "chef": "Christophe Blot",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2b4ne7u/les-chenes-verts-tourtour",
         "address": {
             "address_road": "rte de Villecroze",
@@ -5046,6 +5035,17 @@
         },
         "nameOnMichelin": "Les Chênes Verts",
         "chef": "",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/2agz71j/la-table-des-blot-auberge-du-chateau-dampierre-en-yvelines",
+        "address": {
+            "address_road": "1 Grande-Rue",
+            "postal_code": "78720",
+            "address_locality": "Dampierre-en-Yvelines"
+        },
+        "nameOnMichelin": "La Table des Blot - Auberge du Château",
+        "chef": "Christophe Blot",
         "stars": 1
     },
     {
@@ -5258,17 +5258,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/3u9bmm3c/pertica-vendome",
-        "address": {
-            "address_road": "15 pl. de la République",
-            "postal_code": "41100",
-            "address_locality": "Vendôme"
-        },
-        "nameOnMichelin": "Pertica",
-        "chef": "Guillaume Foucault",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2arajo6/cayola-bois-de-saint-jean",
         "address": {
             "address_road": "76 promenade de Cayola",
@@ -5277,6 +5266,17 @@
         },
         "nameOnMichelin": "Cayola",
         "chef": "",
+        "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/3u9bmm3c/pertica-vendome",
+        "address": {
+            "address_road": "15 pl. de la République",
+            "postal_code": "41100",
+            "address_locality": "Vendôme"
+        },
+        "nameOnMichelin": "Pertica",
+        "chef": "Guillaume Foucault",
         "stars": 1
     },
     {
@@ -5775,17 +5775,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2d2wqpd/le-prieure-villeneuve-les-avignon",
-        "address": {
-            "address_road": "7 pl. du Chapitre",
-            "postal_code": "30400",
-            "address_locality": "Villeneuve-lès-Avignon"
-        },
-        "nameOnMichelin": "Le Prieuré",
-        "chef": "",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/3ffqpazw/la-robe-montaigu",
         "address": {
             "address_road": "3 pl. Reveillère-Lepeaux",
@@ -5918,17 +5907,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/ua3c2rxf/lalchemille-kaysersberg-vignoble",
-        "address": {
-            "address_road": "53 rte de Lapoutroie",
-            "postal_code": "68240",
-            "address_locality": "Kaysersberg"
-        },
-        "nameOnMichelin": "L'Alchémille",
-        "chef": "Jérôme Jaegle",
-        "stars": 1
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2di661r/le-serac-saint-gervais-les-bains",
         "address": {
             "address_road": "22 r. de la Comtesse",
@@ -5949,6 +5927,17 @@
         "nameOnMichelin": "Au 14 Février",
         "chef": "Masafumi Hamano",
         "stars": 2
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/ua3c2rxf/lalchemille-kaysersberg-vignoble",
+        "address": {
+            "address_road": "53 rte de Lapoutroie",
+            "postal_code": "68240",
+            "address_locality": "Kaysersberg"
+        },
+        "nameOnMichelin": "L'Alchémille",
+        "chef": "Jérôme Jaegle",
+        "stars": 1
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/297c2t4/loree-de-la-foret-etouy",
@@ -5992,17 +5981,6 @@
         },
         "nameOnMichelin": "La Bonne Auberge",
         "chef": "Lydia Egloff",
-        "stars": 1
-    },
-    {
-        "urlOnMichelin": "https://restaurant.michelin.fr/2affgmi/apicius-paris-08",
-        "address": {
-            "address_road": "20 r. d'Artois",
-            "postal_code": "75008",
-            "address_locality": "Paris"
-        },
-        "nameOnMichelin": "Apicius",
-        "chef": "",
         "stars": 1
     },
     {
@@ -6072,17 +6050,6 @@
         "stars": 1
     },
     {
-        "urlOnMichelin": "https://restaurant.michelin.fr/6pz7edt2/le-neuvieme-art-lyon-06",
-        "address": {
-            "address_road": "173 r. Cuvier",
-            "postal_code": "69006",
-            "address_locality": "Lyon"
-        },
-        "nameOnMichelin": "Le Neuvième Art",
-        "chef": "Christophe Roure",
-        "stars": 2
-    },
-    {
         "urlOnMichelin": "https://restaurant.michelin.fr/2b120tk/gavroche-strasbourg",
         "address": {
             "address_road": "4 r. Klein",
@@ -6092,6 +6059,17 @@
         "nameOnMichelin": "Gavroche",
         "chef": "Benoit Fuchs",
         "stars": 1
+    },
+    {
+        "urlOnMichelin": "https://restaurant.michelin.fr/6pz7edt2/le-neuvieme-art-lyon-06",
+        "address": {
+            "address_road": "173 r. Cuvier",
+            "postal_code": "69006",
+            "address_locality": "Lyon"
+        },
+        "nameOnMichelin": "Le Neuvième Art",
+        "chef": "Christophe Roure",
+        "stars": 2
     },
     {
         "urlOnMichelin": "https://restaurant.michelin.fr/2duw4bw/les-tables-de-gaspard-saint-crepin",
