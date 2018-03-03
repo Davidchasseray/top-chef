@@ -1,11 +1,5 @@
 # TOP CHEF
-To make the project work ... 
-Go on the server repository. 
-delete restaurants.json and restaurantBis.json
-Launch twice index.js with node 
-Gon on the Client repository
-Launch the app using npm start
-go on your browser and look for localhost:3000
+
 
 
 > Eat well and cheaper than usually
@@ -14,6 +8,7 @@ go on your browser and look for localhost:3000
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Manual](#manual)
 - [Introduction](#introduction)
 - [Objective - Workshop in 1 sentence](#objective---workshop-in-1-sentence)
 - [How to do that?](#how-to-do-that)
@@ -33,6 +28,15 @@ go on your browser and look for localhost:3000
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## Manual
+
+To make the project work ... 
+Go on the server repository. 
+delete restaurants.json and restaurantBis.json
+Launch twice index.js with node 
+Gon on the Client repository
+Launch the app using npm start
+go on your browser and look for localhost:3000
 
 ## Introduction
 
