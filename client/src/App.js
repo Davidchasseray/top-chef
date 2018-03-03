@@ -9,8 +9,6 @@ class App extends Component {
       <div class="backG">
         <div class="container text-center">
           <div class="row"/>
-            
-          
             <div class="col text-center">
             <h1 class="titleCard" > TOP-CHEF PROJECT </h1>
             <h2 class="promoCard">
@@ -19,8 +17,6 @@ class App extends Component {
               <Restaurants />
             </div>
           <div class="row"/>
-          
-
         </div>
       </div>
     );

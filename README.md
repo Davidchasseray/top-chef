@@ -1,4 +1,12 @@
 # TOP CHEF
+To make the project work ... 
+Go on the server repository. 
+delete restaurants.json and restaurantBis.json
+Launch twice index.js with node 
+Gon on the Client repository
+Launch the app using npm start
+go on your browser and look for localhost:3000
+
 
 > Eat well and cheaper than usually
 
